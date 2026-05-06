@@ -1,10 +1,10 @@
 # markdown-styles
 
-Custom CSS for VSCode's built-in Markdown preview, served via [jsDelivr](https://www.jsdelivr.com/).
+Custom CSS for VSCode's Markdown preview, served via [jsDelivr](https://www.jsdelivr.com/).
 
 ## Setup
 
-Add this to your VSCode `settings.json`:
+Add to `settings.json`:
 
 ```json
 "markdown.styles": [
@@ -12,20 +12,17 @@ Add this to your VSCode `settings.json`:
 ]
 ```
 
-> VSCode's Markdown preview only loads stylesheets from whitelisted domains — raw GitHub URLs won't work, but jsDelivr does.
+> Raw GitHub URLs won't work in VSCode's preview; jsDelivr is whitelisted.
 
 ## What's in `main.css`
 
-- **Inter** as the base font with OpenType features (`cv02`, `cv03`, `cv04`, `cv11`)
-- Centered layout, capped at 800px
-- Tighter letter-spacing on headings
+- **Inter** with OpenType features (`cv02`, `cv03`, `cv04`, `cv11`)
+- Centered layout capped at 800px
+- Tighter heading letter-spacing
 - `text-wrap: pretty` for body, `balance` for headings
 
 ## Updating
 
-1. Edit and commit the file
-2. Purge the jsDelivr cache:
-   ```
-   https://purge.jsdelivr.net/gh/petchvm/markdown-styles@main/main.css
-   ```
-3. Reload the Markdown preview in VSCode
+1. Edit and commit the file.
+2. Purge the jsDelivr cache: `https://purge.jsdelivr.net/gh/petchvm/markdown-styles@main/main.css`
+3. Reload the Markdown preview in VSCode.
